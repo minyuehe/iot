@@ -6,7 +6,7 @@ import Href from '@/components/Href'
 import MyInfo from '@/views/web/about/MyInfo'
 
 // API_BASE_URL
-export const API_BASE_URL = 'http://10.13.49.143:3001'
+export const API_BASE_URL = 'http://localhost:3001'
 
 // project config
 export const HEADER_BLOG_NAME = '智慧食堂系统' // header title 显示的名字
