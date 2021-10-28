@@ -1,13 +1,16 @@
+// "off" 或 0 - 关闭这项规则
+// "warn" 或 1 - 将规则视为一个警告
+// "error" 或 2 - 将规则视为一个错误
 module.exports = {
   "extends": ["react-app"],
   "globals": {},
   "rules": {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-unused-vars': 'off', // 定义了但是未使用 不报错
-    indent: ['error', 2], // JavaScript代码强制使用一致的缩进：2格缩进
-    'arrow-parens': ['error', 'as-needed'], // 箭头函数的参数可以不使用圆括号
-    semi: ['error', 'never'], // 不使用分号
+    'no-unused-vars': 1, // 定义了但是未使用 不报错
+    'indent': ['error', 2], // JavaScript代码强制使用一致的缩进：2格缩进
+    'arrow-parens': [2, 'as-needed'], // 箭头函数的参数可以不使用圆括号
+    // 'semi': [2, 'always'], // 使用分号
     // 'import/no-unresolved': 'off,', // 取消自动解析路径，以此开启alias的别名路径设置
     'accessor-pairs': 2,
     'arrow-spacing': [2, {

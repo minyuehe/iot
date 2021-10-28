@@ -20,6 +20,7 @@ const Home = props => {
     queryParams: { pageSize: HOME_PAGESIZE },
     fetchDependence: [props.location.search]
   })
+  console.log('object :>> ', dataList)
 
   const list = useMemo(() => {
     return [...dataList].map(item => {

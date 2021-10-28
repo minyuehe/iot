@@ -79,7 +79,9 @@
     "test": "node scripts/test.js",
     "commit": "git-cz",
     "dev:server": "cd server && npm run dev",
-    "dll": "webpack --config ./config/webpack.dll.js"
+    "dll": "webpack --config ./config/webpack.dll.js",
+    "lint": "npx eslint --ext .js,.jsx,.vue src",
+    "lint:fix": "npx eslint --fix --ext .js,.jsx,.vue src"
   },
   "browserslist": {
     "production": [
